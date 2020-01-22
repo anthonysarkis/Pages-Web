@@ -1,0 +1,142 @@
+@charset "utf-8";
+body {
+	background-image: url("../Images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+}
+table {
+	background-image: url();
+}
+body,td,th {
+	color: #000000;
+	font-family: delius;
+    font-style: normal;
+    font-weight: 400;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.bottom {
+	background: url(../Images/steel-silhouette.jpg);
+	backgroud-size: 100%;
+	background-repeat: no-repeat;
+}
+.date {
+	font-style: italic;
+	color: black;
+}
+.lien {
+	color: lightblue;
+}
+.bottomtext {
+	color: beige;
+	font-weight: bold;
+	font-style: normal;
+}
+.tableindex {
+    background-color: white;
+    background-size: 100%;
+    align: center;
+}
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+.flip-card-back {
+  background-color: darkgray;
+  color: white;
+  transform: rotateY(180deg);
+}
+.tableart {
+	background-color:white;
+	text-align: justify
+}
+.comptabilite {
+	background-color:white;
+	text-align: center;
+}
+.centertext {
+	text-align: center;
+}
+.forfaitsport {
+	background-color: white;
+	text-align: center;
+}
