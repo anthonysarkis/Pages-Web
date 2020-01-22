@@ -1,0 +1,233 @@
+@charset "utf-8";
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #262620;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:#3857BB;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #A2A3D4;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.table1 {
+	background-image: url(../Images/background22.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+body {
+	color: #000000;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-style: normal;
+    font-weight: 400;
+}
+.table2 {
+	background-color: #262620;
+	color: white;
+}
+.titre {
+	background-color: white;
+	text-align: center;
+	font-size: 200%;
+	border-radius: 10px;
+	border: 2px solid #3857BB;
+}
+.whitebackground {
+	background-color: white;
+}
+.main {
+	background-color: white;
+	text-align: center;
+	font-size: 300%;
+	border-radius: 8px;
+}
+.button1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button1:hover span {
+  padding-right: 25px;
+}
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color : #F9A600;
+}
+.maison {
+	background-image: url("../Images/maison2.jpg");
+	background-size: 100%;
+}
+.condo {
+	background-image: url("../Images/condo1.jpeg");
+	background-size: contain;
+	background-repeat: 100%;
+}
+.luxe {
+	background-image: url("../Images/villa.jpg");
+	background-size: 100%;
+}
+.etudiant {
+	background-image: url("../Images/residenceparisest.jpg");
+	background-size: 100%;
+}
+.nonconv {
+	background-image: url("../Images/igloo.jpg");
+	background-size: 100%;
+}
+.previewbutton {
+	  border: none;
+	  background-color: grey;
+	  color: white;
+	  padding: 15px 80px;
+	  text-align: center;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  opacity: 0.6;
+	  transition: 0.3s;
+	  display: inline-block;
+	  text-decoration: none;
+	  cursor: pointer;
+	  font-family:century gothic;
+}
+.previewbutton:hover {
+	opacity: 1
+}
+.whitetext {
+	color: white;
+	font-style: normal;
+	font-size: 110%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.white {
+	color: white;
+}
+.buttonback {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: grey;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonback span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonback span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonback:hover span {
+  padding-right: 25px;
+}
+
+.buttonback:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.flip-card {
+  background-color: transparent;
+  border: 0px solid #f1f1f1;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+.flip-card-back {
+  background-color: darkgray;
+  color: white;
+  transform: rotateY(180deg);
+}
