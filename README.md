@@ -1,2 +1,2 @@
-# Pages-Web
-Travaux pratiques éffectués pour l'école
+# Web-Pages
+School projects
